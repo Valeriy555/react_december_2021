@@ -1,6 +1,7 @@
 import {Navigate, Route, Routes} from "react-router-dom";
 import {MainLayout} from "./layouts";
-import {AboutPage, HomePage, NotFoundPage, PostsPage, SinglePostPage, UsersPage} from "./pages";
+import {CommentsPostPage, HomePage, NotFoundPage, PostsPage, SinglePostPage, UsersPage} from "./pages";
+
 
 
 
@@ -12,9 +13,11 @@ function App() {
                 <Route path={'home'} element={<HomePage/>}/>
                 <Route path={'users'} element={<UsersPage/>}/>
                 <Route path={'posts'} element={<PostsPage/>}>
-                    <Route path={':id'} element={<SinglePostPage/>}/>
+                    <Route path={':id'} element={<SinglePostPage/>}>
+                        <Route path={'comments'} element={<CommentsPostPage/>}/>
+                    </Route>
                 </Route>
-                <Route path={'about'} element={<AboutPage/>}/>
+
                 <Route path={'*'} element={<NotFoundPage/>}/>
             </Route>
         </Routes>

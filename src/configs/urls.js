@@ -3,6 +3,6 @@ export default baseURL
 
 const urls = {
     users:'/users',
-    post:'/posts'
+    posts:'/posts'
 }
 export {urls}

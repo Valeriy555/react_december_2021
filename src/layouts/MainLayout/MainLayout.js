@@ -11,7 +11,6 @@ const MainLayout = () => {
                 <NavLink to="/home">Home</NavLink>
                 <NavLink to="/users">Users</NavLink>
                 <NavLink to="/posts">Posts</NavLink>
-                <NavLink to="/about">About</NavLink>
 
             </div>
             <hr/>

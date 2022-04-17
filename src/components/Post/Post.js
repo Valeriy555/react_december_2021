@@ -9,7 +9,10 @@ const Post = ({post}) => {
 
     return (
         <div>
-            {id}) {title} <Button to={`${id}`} statePost={post}>Details Post {id} </Button>
+            {id}) {title}
+
+            <Button to={`${id}`} state={post}>Details Post {id} </Button>
+
         </div>
     );
 };

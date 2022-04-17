@@ -7,19 +7,19 @@ import css from "./SinglePostPage.module.css";
 
 
 const SinglePostPage = () => {
-    const {statePost} = useLocation();
-    const [post, setPost] = useState(statePost);
+    const {state} = useLocation();
+    const [post, setPost] = useState(state);
     const {id} = useParams();
 
 
     useEffect(() => {
-        if(!statePost){
+        if(!state){
         postService.getByIdPost(id).then(({data}) => setPost(data))
 
         }else {
-            setPost(statePost)
+            setPost(state)
         }
-    }, [id, statePost])
+    }, [id, state])
 
     return (
         <div className={css.wrapPost}>
