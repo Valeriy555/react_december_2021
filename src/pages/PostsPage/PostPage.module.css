@@ -1,4 +1,8 @@
-.wrap{
+.wrapPosts{
     display: flex;
+}
 
+.posts{
+    background: #61dafb;
+    width: 600px;
 }

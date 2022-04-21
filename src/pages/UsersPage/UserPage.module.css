@@ -1,0 +1,8 @@
+.wrapUsers{
+    display: flex;
+}
+
+.users{
+    background: silver;
+    width: 600px;
+}

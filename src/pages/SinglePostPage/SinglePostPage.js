@@ -5,7 +5,6 @@ import {postService} from "../../services";
 import {PostDetails} from "../../components";
 import css from "./SinglePostPage.module.css";
 
-
 const SinglePostPage = () => {
     const {state} = useLocation();
     const [post, setPost] = useState(state);

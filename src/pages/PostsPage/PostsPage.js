@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from 'react';
+import {Outlet} from "react-router-dom";
 
 import {postService} from "../../services";
 import {Post} from "../../components";
-import {Outlet} from "react-router-dom";
 import css from "./PostPage.module.css";
 
 const PostsPage = () => {
@@ -13,9 +13,11 @@ const PostsPage = () => {
     }, [])
 
     return (
-        <div className={css.wrap}>
+        <div className={css.wrapPosts}>
 
-            <div>{posts.map(post => <Post key={post.id} post={post}/>)}</div>
+            <div className={css.posts}>
+                {posts.map(post => <Post key={post.id} post={post}/>)}
+            </div>
 
             <div><Outlet/></div>
         </div>

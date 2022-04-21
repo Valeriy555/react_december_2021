@@ -15,7 +15,9 @@ const MainLayout = () => {
             </div>
             <hr/>
 
-            <Outlet/>
+
+                <Outlet/>
+
 
         </div>
     );
