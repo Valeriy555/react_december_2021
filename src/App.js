@@ -1,6 +1,7 @@
-import Redux from "./redux";
 import {Provider} from "react-redux";
 import {createStore} from "redux";
+
+import ReduxComp from "./Redux.component/ReduxComp";
 
 function App() {
 
@@ -24,7 +25,7 @@ function App() {
         <div>
             <Provider store={store}>
 
-                <Redux props={'hello => через пропсы'}/>
+                <ReduxComp />
 
             </Provider>
         </div>
