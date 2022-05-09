@@ -1,9 +1,13 @@
+import {Cars, Users} from "./components";
+
 function App() {
-  return (
-   <div>
-Hello react!!!
-   </div>
-  );
+    return (
+        <div>
+
+            <Users/>
+            <Cars/>
+        </div>
+    );
 }
 
 export default App;
