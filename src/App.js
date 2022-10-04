@@ -9,7 +9,8 @@ function App() {
 
     const addCat = () => {
         const newCat = catRef.current.value;
-        dispatch({type: ADD, payload: {cat: newCat}})
+        dispatch({type: ADD, payload: { newCat }})
+        console.log(newCat);
     }
 
     return (
@@ -20,8 +21,8 @@ function App() {
             </div>
             <hr/>
             <div>
-                {state.map(cat => <div key={cat.id}>{cat.name}
-                    <button onClick={() => dispatch({type: DELETE, payload: {id: cat.id}})}>Delete</button>
+                {state.map(newCat => <div key={newCat.id}>{newCat.name}
+                    <button onClick={() => dispatch({type: DELETE, payload: {id: newCat.id}})}>Delete</button>
                 </div>)}
             </div>
 

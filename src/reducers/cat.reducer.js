@@ -5,7 +5,7 @@ const reducer = (state, action) => {
 
     switch (action.type) {
         case ADD:
-            const cat = action.payload.cat;
+            const cat = action.payload.newCat;
 
             const [lastCat] = state.slice(-1);
             const id = lastCat ? lastCat.id + 1 : 0;
@@ -19,7 +19,6 @@ const reducer = (state, action) => {
             return [...state]
     }
 };
-
 
 const useCatReducer = () => useReducer(reducer, []);
 
