@@ -6,12 +6,10 @@ const ReduxComp = () => {
     let dispatch = useDispatch();
     return (
         <div>
-
             <div>{state}</div>
             <button onClick={() => dispatch ({type: 'change', payload:'poka Valera => через redux'})}>Изменить</button>
             <button onClick={() => dispatch ({type: 'back', payload:'privet Valera => через redux!!'})}>Вернуть назад</button>
         </div>
     );
 };
-
 export default ReduxComp;
